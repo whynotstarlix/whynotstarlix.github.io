@@ -1,0 +1,51 @@
+name: TG Bot Decompile
+
+on:
+  workflow_dispatch:
+    inputs:
+      file_url:
+        required: true
+      task_id:
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
+          
+      - run: dotnet tool install -g ilspycmd
+      
+      - name: Декомпиляция
+        run: |
+          export PATH="$PATH:$HOME/.dotnet/tools"
+          
+          # Создаем папку под конкретный таск
+          mkdir -p decompiled/${{ github.event.inputs.task_id }} input
+          
+          # Качаем файл по ссылке из телеги
+          curl -L -o input/app.file "${{ github.event.inputs.file_url }}"
+          
+          # Декомпилим
+          ilspycmd -p -o decompiled/${{ github.event.inputs.task_id }} input/app.file
+          
+          # Делаем список файлов
+          python3 -c 'import os, json; d="decompiled/${{ github.event.inputs.task_id }}"; files = [os.path.join(dp, f).replace(d+"/", "") for dp, dn, filenames in os.walk(d) for f in filenames if f.endswith(".cs")]; open(os.path.join(d, "files.json"), "w").write(json.dumps(files))'
+          
+          # Убираем мусор
+          rm -rf input/
+          
+      - name: Заливаем на гитхаб
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "bot@github.com"
+          git add decompiled/
+          git commit -m "Добавлен код: ${{ github.event.inputs.task_id }}" || echo "Нет изменений"
+          git push
