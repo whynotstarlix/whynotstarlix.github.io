@@ -27,19 +27,20 @@ jobs:
         run: |
           export PATH="$PATH:$HOME/.dotnet/tools"
           
-          # Создаем папку под конкретный таск
+          # Создаем папки
           mkdir -p decompiled/${{ github.event.inputs.task_id }} input
           
-          # Качаем файл по ссылке из телеги
+          # Качаем файл
           curl -L -o input/app.file "${{ github.event.inputs.file_url }}"
           
-          # Декомпилим
-          ilspycmd -p -o decompiled/${{ github.event.inputs.task_id }} input/app.file
+          # Декомпилим. Весь текст (и нормальный, и ошибки) пишем в error_log.txt. 
+          # А приписка "|| true" в конце говорит Гитхабу не падать, если была ошибка.
+          ilspycmd -p -o decompiled/${{ github.event.inputs.task_id }} input/app.file > decompiled/${{ github.event.inputs.task_id }}/error_log.txt 2>&1 || true
           
-          # Делаем список файлов
-          python3 -c 'import os, json; d="decompiled/${{ github.event.inputs.task_id }}"; files = [os.path.join(dp, f).replace(d+"/", "") for dp, dn, filenames in os.walk(d) for f in filenames if f.endswith(".cs")]; open(os.path.join(d, "files.json"), "w").write(json.dumps(files))'
+          # Собираем файлы. Я добавил тут поиск .txt, чтобы лог ошибок тоже появился на сайте
+          python3 -c 'import os, json; d="decompiled/${{ github.event.inputs.task_id }}"; files = [os.path.join(dp, f).replace(d+"/", "") for dp, dn, filenames in os.walk(d) for f in filenames if f.endswith(".cs") or f.endswith(".txt")]; open(os.path.join(d, "files.json"), "w").write(json.dumps(files))'
           
-          # Убираем мусор
+          # Убираем исходник
           rm -rf input/
           
       - name: Заливаем на гитхаб
