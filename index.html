@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Код</title>
+    <style>
+        body { font-family: sans-serif; margin: 0; padding: 15px; background: #222; color: #fff; }
+        select { font-size: 16px; padding: 10px; width: 100%; background: #333; color: #fff; border: 1px solid #555; margin-bottom: 10px; }
+        pre { background: #111; padding: 10px; overflow-x: auto; font-size: 13px; color: #0f0; border-radius: 5px;}
+    </style>
+</head>
+<body>
+    <select id="fileSelector" onchange="loadCode(this.value)">
+        <option>Ждем загрузки...</option>
+    </select>
+    <pre><code id="codeBlock">Тут появится код</code></pre>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const taskId = urlParams.get('id');
+
+        async function init() {
+            if (!taskId) return document.getElementById('codeBlock').innerText = "Нет ID в ссылке";
+            
+            try {
+                // Добавил случайное число, чтоб телефон не кэшировал старое
+                const res = await fetch(`decompiled/${taskId}/files.json?` + Math.random());
+                const files = await res.json();
+                
+                const selector = document.getElementById('fileSelector');
+                selector.innerHTML = '<option value="">-- Выбери файл --</option>';
+                
+                files.forEach(f => {
+                    const opt = document.createElement('option');
+                    opt.value = f;
+                    opt.innerText = f.split('/').pop();
+                    selector.appendChild(opt);
+                });
+            } catch (e) {
+                document.getElementById('codeBlock').innerText = "Гитхаб еще обрабатывает файлы или заливает сайт. Обнови страницу через минуту.";
+            }
+        }
+
+        async function loadCode(path) {
+            if (!path) return;
+            const res = await fetch(`decompiled/${taskId}/${path}`);
+            const text = await res.text();
+            document.getElementById('codeBlock').innerText = text;
+        }
+
+        init();
+    </script>
+</body>
+</html>
