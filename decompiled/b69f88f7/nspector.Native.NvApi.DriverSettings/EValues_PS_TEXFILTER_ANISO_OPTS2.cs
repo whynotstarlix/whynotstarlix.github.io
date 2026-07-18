@@ -1,0 +1,9 @@
+namespace nspector.Native.NvApi.DriverSettings;
+
+public enum EValues_PS_TEXFILTER_ANISO_OPTS2 : uint
+{
+	PS_TEXFILTER_ANISO_OPTS2_OFF = 0u,
+	PS_TEXFILTER_ANISO_OPTS2_ON = 1u,
+	PS_TEXFILTER_ANISO_OPTS2_NUM_VALUES = 2u,
+	PS_TEXFILTER_ANISO_OPTS2_DEFAULT = 0u
+}

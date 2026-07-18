@@ -1,0 +1,9 @@
+namespace nspector.Native.NvApi.DriverSettings;
+
+public enum EValues_FXAA_INDICATOR_ENABLE : uint
+{
+	FXAA_INDICATOR_ENABLE_OFF = 0u,
+	FXAA_INDICATOR_ENABLE_ON = 1u,
+	FXAA_INDICATOR_ENABLE_NUM_VALUES = 2u,
+	FXAA_INDICATOR_ENABLE_DEFAULT = 0u
+}

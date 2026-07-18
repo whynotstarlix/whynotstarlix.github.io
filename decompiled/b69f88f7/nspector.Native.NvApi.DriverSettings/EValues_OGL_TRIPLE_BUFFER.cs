@@ -1,0 +1,9 @@
+namespace nspector.Native.NvApi.DriverSettings;
+
+public enum EValues_OGL_TRIPLE_BUFFER : uint
+{
+	OGL_TRIPLE_BUFFER_DISABLED = 0u,
+	OGL_TRIPLE_BUFFER_ENABLED = 1u,
+	OGL_TRIPLE_BUFFER_NUM_VALUES = 2u,
+	OGL_TRIPLE_BUFFER_DEFAULT = 0u
+}

@@ -1,0 +1,9 @@
+namespace nspector.Native.NvApi.DriverSettings;
+
+public enum EValues_ANSEL_ALLOWLISTED : uint
+{
+	ANSEL_ALLOWLISTED_DISALLOWED = 0u,
+	ANSEL_ALLOWLISTED_ALLOWED = 1u,
+	ANSEL_ALLOWLISTED_NUM_VALUES = 2u,
+	ANSEL_ALLOWLISTED_DEFAULT = 0u
+}

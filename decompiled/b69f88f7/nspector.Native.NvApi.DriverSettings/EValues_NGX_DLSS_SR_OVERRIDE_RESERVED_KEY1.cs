@@ -1,0 +1,7 @@
+namespace nspector.Native.NvApi.DriverSettings;
+
+public enum EValues_NGX_DLSS_SR_OVERRIDE_RESERVED_KEY1 : uint
+{
+	NGX_DLSS_SR_OVERRIDE_RESERVED_KEY1_DEFAULT,
+	NGX_DLSS_SR_OVERRIDE_RESERVED_KEY1_NUM_VALUES
+}

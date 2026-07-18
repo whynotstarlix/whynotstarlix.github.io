@@ -1,0 +1,10 @@
+namespace nspector.Native.NvApi.DriverSettings;
+
+public enum EValues_OGL_OVERLAY_SUPPORT : uint
+{
+	OGL_OVERLAY_SUPPORT_OFF = 0u,
+	OGL_OVERLAY_SUPPORT_ON = 1u,
+	OGL_OVERLAY_SUPPORT_FORCE_SW = 2u,
+	OGL_OVERLAY_SUPPORT_NUM_VALUES = 3u,
+	OGL_OVERLAY_SUPPORT_DEFAULT = 0u
+}

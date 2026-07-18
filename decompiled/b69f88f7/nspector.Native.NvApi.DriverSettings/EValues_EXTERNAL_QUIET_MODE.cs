@@ -1,0 +1,9 @@
+namespace nspector.Native.NvApi.DriverSettings;
+
+public enum EValues_EXTERNAL_QUIET_MODE : uint
+{
+	EXTERNAL_QUIET_MODE_ON = 1u,
+	EXTERNAL_QUIET_MODE_OFF = 0u,
+	EXTERNAL_QUIET_MODE_NUM_VALUES = 2u,
+	EXTERNAL_QUIET_MODE_DEFAULT = 0u
+}

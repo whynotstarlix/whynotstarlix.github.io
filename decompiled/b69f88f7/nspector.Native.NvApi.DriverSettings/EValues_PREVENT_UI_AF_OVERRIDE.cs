@@ -1,0 +1,9 @@
+namespace nspector.Native.NvApi.DriverSettings;
+
+public enum EValues_PREVENT_UI_AF_OVERRIDE : uint
+{
+	PREVENT_UI_AF_OVERRIDE_OFF = 0u,
+	PREVENT_UI_AF_OVERRIDE_ON = 1u,
+	PREVENT_UI_AF_OVERRIDE_NUM_VALUES = 2u,
+	PREVENT_UI_AF_OVERRIDE_DEFAULT = 0u
+}

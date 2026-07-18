@@ -1,0 +1,9 @@
+namespace nspector.Native.NvApi.DriverSettings;
+
+public enum EValues_NGX_DLAA_OVERRIDE : uint
+{
+	NGX_DLAA_OVERRIDE_DLAA_DEFAULT = 0u,
+	NGX_DLAA_OVERRIDE_DLAA_ON = 1u,
+	NGX_DLAA_OVERRIDE_NUM_VALUES = 2u,
+	NGX_DLAA_OVERRIDE_DEFAULT = 0u
+}

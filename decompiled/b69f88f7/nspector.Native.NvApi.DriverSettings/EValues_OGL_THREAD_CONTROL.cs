@@ -1,0 +1,9 @@
+namespace nspector.Native.NvApi.DriverSettings;
+
+public enum EValues_OGL_THREAD_CONTROL : uint
+{
+	OGL_THREAD_CONTROL_ENABLE = 1u,
+	OGL_THREAD_CONTROL_DISABLE = 2u,
+	OGL_THREAD_CONTROL_NUM_VALUES = 2u,
+	OGL_THREAD_CONTROL_DEFAULT = 0u
+}

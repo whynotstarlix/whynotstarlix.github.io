@@ -1,0 +1,28 @@
+public enum KeyActionType
+{
+	Alias = 0,
+	Tap = 1,
+	Swipe = 2,
+	Dpad = 3,
+	Zoom = 4,
+	Tilt = 5,
+	Pan = 6,
+	MOBADpad = 7,
+	MOBASkill = 8,
+	Raw = 9,
+	KeyInput = 10,
+	SendOriginalKeys = 11,
+	Script = 12,
+	TapRepeat = 13,
+	Rotate = 14,
+	State = 15,
+	FreeLook = 16,
+	DontForwardKeys = 17,
+	MouseZoom = 18,
+	Scroll = 19,
+	EdgeScroll = 20,
+	Callback = 21,
+	LookAround = 100,
+	PanShoot = 101,
+	MOBASkillCancel = 102
+}

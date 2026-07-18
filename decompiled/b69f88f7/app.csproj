@@ -1,0 +1,341 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>Bluestacks</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWPF>True</UseWPF>
+    <TargetFramework>net35</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>15.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="controls/macrobookmarkspopup.baml" />
+    <None Remove="controls/importmacroscriptscontrol.baml" />
+    <None Remove="controls/settingswindows/shortcutkeyscontrol.baml" />
+    <None Remove="controls/genericnotification/notificationdrawer.baml" />
+    <None Remove="controls/speedupbluestacks.baml" />
+    <None Remove="keymap/uielement/exportschemeswindow.baml" />
+    <None Remove="controls/ncsofttopbar.baml" />
+    <None Remove="controls/settingswindows/appnotificationstogglebutton.baml" />
+    <None Remove="keymap/guidancemodels/imaptextbox.baml" />
+    <None Remove="controls/recommendedappitem.baml" />
+    <None Remove="controls/pikanotificationcontrol.baml" />
+    <None Remove="themeeditorwindow.baml" />
+    <None Remove="keymap/uielement/mobaskillsettingspopup.baml" />
+    <None Remove="controls/settingswindows/dmmscreenshotsettingcontrol.baml" />
+    <None Remove="controls/settingswindows/customtogglebutton.baml" />
+    <None Remove="controls/importmacrowindow.baml" />
+    <None Remove="controls/settingswindows/deviceprofilecontrol.baml" />
+    <None Remove="controls/macrosettingswindow.baml" />
+    <None Remove="controls/updatedownloadprogress.baml" />
+    <None Remove="controls/schemebookmarkcontrol.baml" />
+    <None Remove="keymap/advancedgamecontrolwindow.baml" />
+    <None Remove="keymap/uielement/overlaylabelcontrol.baml" />
+    <None Remove="controls/quitpopupbrowsercontrol.baml" />
+    <None Remove="keymap/uielement/gameonboardingcontrol.baml" />
+    <None Remove="controls/topbaroptions.baml" />
+    <None Remove="controls/dimoverlaycontrol.baml" />
+    <None Remove="controls/extensionpopupcontrol.baml" />
+    <None Remove="controls/fullscreentoastpopupcontrol.baml" />
+    <None Remove="keymap/uielement/advancedsettingsitempanel.baml" />
+    <None Remove="controls/exportmacrowindow.baml" />
+    <None Remove="welcometab.baml" />
+    <None Remove="controls/promotioncontrol.baml" />
+    <None Remove="controls/quitactionelement.baml" />
+    <None Remove="controls/synchronizerwindow.baml" />
+    <None Remove="keymap/uielement/dualtextblockcontrol.baml" />
+    <None Remove="controls/frontendpopupcontrol.baml" />
+    <None Remove="keymap/keymapextrasettingwindow.baml" />
+    <None Remove="controls/macrorecorderwindow.baml" />
+    <None Remove="controls/gifttabusercontrol.baml" />
+    <None Remove="controls/fullscreentopbar.baml" />
+    <None Remove="controls/macroaddeddragcontrol.baml" />
+    <None Remove="controls/macrooverlay.baml" />
+    <None Remove="keymap/uielement/mobaothersettingsmoreinfopopup.baml" />
+    <None Remove="controls/progressbar.baml" />
+    <None Remove="controls/sidebarpopup.baml" />
+    <None Remove="controls/sidebar.baml" />
+    <None Remove="controls/gl3customwindow.baml" />
+    <None Remove="keymap/uielement/skillicontooltippopup.baml" />
+    <None Remove="dmmrecommendedwindow.baml" />
+    <None Remove="keymap/uielement/mobaskillsettingsmoreinfopopup.baml" />
+    <None Remove="keymap/uielement/importschemeswindow.baml" />
+    <None Remove="controls/sidebarelement.baml" />
+    <None Remove="controls/mergemacrowindow.baml" />
+    <None Remove="controls/dmmfullscreentopbar.baml" />
+    <None Remove="keymap/uielement/comboboxschemecontrol.baml" />
+    <None Remove="controls/settingswindows/shortcutkeycontrolelement.baml" />
+    <None Remove="keymap/uielement/canvaselement.baml" />
+    <None Remove="controls/settingswindows/backuprestoresettingscontrol.baml" />
+    <None Remove="controls/customscrollviewer.baml" />
+    <None Remove="controls/slideshowcontrol.baml" />
+    <None Remove="controls/recommendedappssection.baml" />
+    <None Remove="controls/frontendotscontrol.baml" />
+    <None Remove="keymap/uielement/onboardingoverlaycontrol.baml" />
+    <None Remove="controls/settingswindows/notificationssettings.baml" />
+    <None Remove="keymap/guidancemodels/steppertextbox.baml" />
+    <None Remove="mainwindow.baml" />
+    <None Remove="controls/postotswelcomewindowcontrol.baml" />
+    <None Remove="controls/videorecordingstatus.baml" />
+    <None Remove="resources/scrollviewerstyle.baml" />
+    <None Remove="controls/dmmbottombar.baml" />
+    <None Remove="keymap/uielement/importschemeswindowcontrol.baml" />
+    <None Remove="controls/settingswindows/aboutsettingscontrol.baml" />
+    <None Remove="dummytaskbarwindow.baml" />
+    <None Remove="homeapptabbutton.baml" />
+    <None Remove="controls/changethemewindow.baml" />
+    <None Remove="apptabbutton.baml" />
+    <None Remove="controls/macrotoadd.baml" />
+    <None Remove="keymap/guidancewindow.baml" />
+    <None Remove="controls/singlemacrocontrol.baml" />
+    <None Remove="controls/screenlockcontrol.baml" />
+    <None Remove="controls/genericnotification/notificationdraweritem.baml" />
+    <None Remove="controls/autocompletecombobox.baml" />
+    <None Remove="controls/recommendedapps.baml" />
+    <None Remove="keymap/uielement/guidancevideowindow.baml" />
+    <None Remove="controls/bluestacksadvancedexit.baml" />
+    <None Remove="controls/ncsettingsdropdown.baml" />
+    <None Remove="controls/otsfeedbackcontrol.baml" />
+    <None Remove="cfgreorderwindow.baml" />
+    <None Remove="controls/blurbmessagecontrol.baml" />
+    <None Remove="controls/updateprompt.baml" />
+    <None Remove="controls/minimizebluestacksonclose/view/minimizebluestacksoncloseview.baml" />
+    <None Remove="controls/imagetranslatecontrol.baml" />
+    <None Remove="controls/macrotopbarrecordcontrol.baml" />
+    <None Remove="keymap/keymapcanvaswindow.baml" />
+    <None Remove="controls/custompersistenttoastpopupcontrol.baml" />
+    <None Remove="controls/skinselectorcontrol.baml" />
+    <None Remove="homeapp.baml" />
+    <None Remove="controls/settingswindows/gamesettingview.baml" />
+    <None Remove="controls/nointernetcontrol.baml" />
+    <None Remove="controls/notificationmodeexitpopup.baml" />
+    <None Remove="controls/settingswindows/preferencessettingscontrol.baml" />
+    <None Remove="controls/dmmprogresscontrol.baml" />
+    <None Remove="controls/popupbrowsercontrol.baml" />
+    <None Remove="containerwindow.baml" />
+    <None Remove="controls/widgeticon.baml" />
+    <None Remove="controls/speedupbluestacksusercontrol.baml" />
+    <None Remove="app.baml" />
+    <None Remove="controls/quitpopupcontrol.baml" />
+    <None Remove="appiconui.baml" />
+    <None Remove="topbar.baml" />
+    <None Remove="keymap/uielement/schemecombobox.baml" />
+    <None Remove="controls/dimcontrolwithprogresbar.baml" />
+    <None Remove="apptabbuttons.baml" />
+    <None Remove="onboardingpopupwindow.baml" />
+    <None Remove="controls/preferencedropdowncontrol.baml" />
+    <None Remove="controls/macrotopbarplaycontrol.baml" />
+    <None Remove="BouncyCastle.Cryptography.dll" />
+    <None Remove="DiscordRPC.dll" />
+    <None Remove="GalaSoft.MvvmLight.dll" />
+    <None Remove="GalaSoft.MvvmLight.Extras.dll" />
+    <None Remove="Guna.UI2.dll" />
+    <None Remove="HD-Common.dll" />
+    <None Remove="Microsoft.Practices.ServiceLocation.dll" />
+    <None Remove="Microsoft.WindowsAPICodePack.dll" />
+    <None Remove="Microsoft.WindowsAPICodePack.Shell.dll" />
+    <None Remove="Newtonsoft.Json.dll" />
+    <None Remove="System.Windows.Interactivity.dll" />
+    <None Remove="Theraot.Core.dll" />
+    <None Remove="Vanara.Core.dll" />
+    <None Remove="Vanara.PInvoke.DwmApi.dll" />
+    <None Remove="Vanara.PInvoke.Gdi32.dll" />
+    <None Remove="Vanara.PInvoke.Shared.dll" />
+    <None Remove="Windows7.Multitouch.dll" />
+    <None Remove="Windows7.Multitouch.WPF.dll" />
+    <None Remove="Xilium.CefGlue.dll" />
+    <None Remove="Xilium.CefGlue.WPF.dll" />
+    <EmbeddedResource Include="controls/macrobookmarkspopup.baml" LogicalName="controls/macrobookmarkspopup.baml" />
+    <EmbeddedResource Include="controls/importmacroscriptscontrol.baml" LogicalName="controls/importmacroscriptscontrol.baml" />
+    <EmbeddedResource Include="controls/settingswindows/shortcutkeyscontrol.baml" LogicalName="controls/settingswindows/shortcutkeyscontrol.baml" />
+    <EmbeddedResource Include="controls/genericnotification/notificationdrawer.baml" LogicalName="controls/genericnotification/notificationdrawer.baml" />
+    <EmbeddedResource Include="controls/speedupbluestacks.baml" LogicalName="controls/speedupbluestacks.baml" />
+    <EmbeddedResource Include="keymap/uielement/exportschemeswindow.baml" LogicalName="keymap/uielement/exportschemeswindow.baml" />
+    <EmbeddedResource Include="controls/ncsofttopbar.baml" LogicalName="controls/ncsofttopbar.baml" />
+    <EmbeddedResource Include="controls/settingswindows/appnotificationstogglebutton.baml" LogicalName="controls/settingswindows/appnotificationstogglebutton.baml" />
+    <EmbeddedResource Include="keymap/guidancemodels/imaptextbox.baml" LogicalName="keymap/guidancemodels/imaptextbox.baml" />
+    <EmbeddedResource Include="controls/recommendedappitem.baml" LogicalName="controls/recommendedappitem.baml" />
+    <EmbeddedResource Include="controls/pikanotificationcontrol.baml" LogicalName="controls/pikanotificationcontrol.baml" />
+    <EmbeddedResource Include="themeeditorwindow.baml" LogicalName="themeeditorwindow.baml" />
+    <EmbeddedResource Include="keymap/uielement/mobaskillsettingspopup.baml" LogicalName="keymap/uielement/mobaskillsettingspopup.baml" />
+    <EmbeddedResource Include="controls/settingswindows/dmmscreenshotsettingcontrol.baml" LogicalName="controls/settingswindows/dmmscreenshotsettingcontrol.baml" />
+    <EmbeddedResource Include="controls/settingswindows/customtogglebutton.baml" LogicalName="controls/settingswindows/customtogglebutton.baml" />
+    <EmbeddedResource Include="controls/importmacrowindow.baml" LogicalName="controls/importmacrowindow.baml" />
+    <EmbeddedResource Include="controls/settingswindows/deviceprofilecontrol.baml" LogicalName="controls/settingswindows/deviceprofilecontrol.baml" />
+    <EmbeddedResource Include="controls/macrosettingswindow.baml" LogicalName="controls/macrosettingswindow.baml" />
+    <EmbeddedResource Include="controls/updatedownloadprogress.baml" LogicalName="controls/updatedownloadprogress.baml" />
+    <EmbeddedResource Include="controls/schemebookmarkcontrol.baml" LogicalName="controls/schemebookmarkcontrol.baml" />
+    <EmbeddedResource Include="keymap/advancedgamecontrolwindow.baml" LogicalName="keymap/advancedgamecontrolwindow.baml" />
+    <EmbeddedResource Include="keymap/uielement/overlaylabelcontrol.baml" LogicalName="keymap/uielement/overlaylabelcontrol.baml" />
+    <EmbeddedResource Include="controls/quitpopupbrowsercontrol.baml" LogicalName="controls/quitpopupbrowsercontrol.baml" />
+    <EmbeddedResource Include="keymap/uielement/gameonboardingcontrol.baml" LogicalName="keymap/uielement/gameonboardingcontrol.baml" />
+    <EmbeddedResource Include="controls/topbaroptions.baml" LogicalName="controls/topbaroptions.baml" />
+    <EmbeddedResource Include="controls/dimoverlaycontrol.baml" LogicalName="controls/dimoverlaycontrol.baml" />
+    <EmbeddedResource Include="controls/extensionpopupcontrol.baml" LogicalName="controls/extensionpopupcontrol.baml" />
+    <EmbeddedResource Include="controls/fullscreentoastpopupcontrol.baml" LogicalName="controls/fullscreentoastpopupcontrol.baml" />
+    <EmbeddedResource Include="keymap/uielement/advancedsettingsitempanel.baml" LogicalName="keymap/uielement/advancedsettingsitempanel.baml" />
+    <EmbeddedResource Include="controls/exportmacrowindow.baml" LogicalName="controls/exportmacrowindow.baml" />
+    <EmbeddedResource Include="welcometab.baml" LogicalName="welcometab.baml" />
+    <EmbeddedResource Include="controls/promotioncontrol.baml" LogicalName="controls/promotioncontrol.baml" />
+    <EmbeddedResource Include="controls/quitactionelement.baml" LogicalName="controls/quitactionelement.baml" />
+    <EmbeddedResource Include="controls/synchronizerwindow.baml" LogicalName="controls/synchronizerwindow.baml" />
+    <EmbeddedResource Include="keymap/uielement/dualtextblockcontrol.baml" LogicalName="keymap/uielement/dualtextblockcontrol.baml" />
+    <EmbeddedResource Include="controls/frontendpopupcontrol.baml" LogicalName="controls/frontendpopupcontrol.baml" />
+    <EmbeddedResource Include="keymap/keymapextrasettingwindow.baml" LogicalName="keymap/keymapextrasettingwindow.baml" />
+    <EmbeddedResource Include="controls/macrorecorderwindow.baml" LogicalName="controls/macrorecorderwindow.baml" />
+    <EmbeddedResource Include="controls/gifttabusercontrol.baml" LogicalName="controls/gifttabusercontrol.baml" />
+    <EmbeddedResource Include="controls/fullscreentopbar.baml" LogicalName="controls/fullscreentopbar.baml" />
+    <EmbeddedResource Include="controls/macroaddeddragcontrol.baml" LogicalName="controls/macroaddeddragcontrol.baml" />
+    <EmbeddedResource Include="controls/macrooverlay.baml" LogicalName="controls/macrooverlay.baml" />
+    <EmbeddedResource Include="keymap/uielement/mobaothersettingsmoreinfopopup.baml" LogicalName="keymap/uielement/mobaothersettingsmoreinfopopup.baml" />
+    <EmbeddedResource Include="controls/progressbar.baml" LogicalName="controls/progressbar.baml" />
+    <EmbeddedResource Include="controls/sidebarpopup.baml" LogicalName="controls/sidebarpopup.baml" />
+    <EmbeddedResource Include="controls/sidebar.baml" LogicalName="controls/sidebar.baml" />
+    <EmbeddedResource Include="controls/gl3customwindow.baml" LogicalName="controls/gl3customwindow.baml" />
+    <EmbeddedResource Include="keymap/uielement/skillicontooltippopup.baml" LogicalName="keymap/uielement/skillicontooltippopup.baml" />
+    <EmbeddedResource Include="dmmrecommendedwindow.baml" LogicalName="dmmrecommendedwindow.baml" />
+    <EmbeddedResource Include="keymap/uielement/mobaskillsettingsmoreinfopopup.baml" LogicalName="keymap/uielement/mobaskillsettingsmoreinfopopup.baml" />
+    <EmbeddedResource Include="keymap/uielement/importschemeswindow.baml" LogicalName="keymap/uielement/importschemeswindow.baml" />
+    <EmbeddedResource Include="controls/sidebarelement.baml" LogicalName="controls/sidebarelement.baml" />
+    <EmbeddedResource Include="controls/mergemacrowindow.baml" LogicalName="controls/mergemacrowindow.baml" />
+    <EmbeddedResource Include="controls/dmmfullscreentopbar.baml" LogicalName="controls/dmmfullscreentopbar.baml" />
+    <EmbeddedResource Include="keymap/uielement/comboboxschemecontrol.baml" LogicalName="keymap/uielement/comboboxschemecontrol.baml" />
+    <EmbeddedResource Include="controls/settingswindows/shortcutkeycontrolelement.baml" LogicalName="controls/settingswindows/shortcutkeycontrolelement.baml" />
+    <EmbeddedResource Include="keymap/uielement/canvaselement.baml" LogicalName="keymap/uielement/canvaselement.baml" />
+    <EmbeddedResource Include="controls/settingswindows/backuprestoresettingscontrol.baml" LogicalName="controls/settingswindows/backuprestoresettingscontrol.baml" />
+    <EmbeddedResource Include="controls/customscrollviewer.baml" LogicalName="controls/customscrollviewer.baml" />
+    <EmbeddedResource Include="controls/slideshowcontrol.baml" LogicalName="controls/slideshowcontrol.baml" />
+    <EmbeddedResource Include="controls/recommendedappssection.baml" LogicalName="controls/recommendedappssection.baml" />
+    <EmbeddedResource Include="controls/frontendotscontrol.baml" LogicalName="controls/frontendotscontrol.baml" />
+    <EmbeddedResource Include="keymap/uielement/onboardingoverlaycontrol.baml" LogicalName="keymap/uielement/onboardingoverlaycontrol.baml" />
+    <EmbeddedResource Include="controls/settingswindows/notificationssettings.baml" LogicalName="controls/settingswindows/notificationssettings.baml" />
+    <EmbeddedResource Include="keymap/guidancemodels/steppertextbox.baml" LogicalName="keymap/guidancemodels/steppertextbox.baml" />
+    <EmbeddedResource Include="mainwindow.baml" LogicalName="mainwindow.baml" />
+    <EmbeddedResource Include="controls/postotswelcomewindowcontrol.baml" LogicalName="controls/postotswelcomewindowcontrol.baml" />
+    <EmbeddedResource Include="controls/videorecordingstatus.baml" LogicalName="controls/videorecordingstatus.baml" />
+    <EmbeddedResource Include="resources/scrollviewerstyle.baml" LogicalName="resources/scrollviewerstyle.baml" />
+    <EmbeddedResource Include="controls/dmmbottombar.baml" LogicalName="controls/dmmbottombar.baml" />
+    <EmbeddedResource Include="keymap/uielement/importschemeswindowcontrol.baml" LogicalName="keymap/uielement/importschemeswindowcontrol.baml" />
+    <EmbeddedResource Include="controls/settingswindows/aboutsettingscontrol.baml" LogicalName="controls/settingswindows/aboutsettingscontrol.baml" />
+    <EmbeddedResource Include="dummytaskbarwindow.baml" LogicalName="dummytaskbarwindow.baml" />
+    <EmbeddedResource Include="homeapptabbutton.baml" LogicalName="homeapptabbutton.baml" />
+    <EmbeddedResource Include="controls/changethemewindow.baml" LogicalName="controls/changethemewindow.baml" />
+    <EmbeddedResource Include="apptabbutton.baml" LogicalName="apptabbutton.baml" />
+    <EmbeddedResource Include="controls/macrotoadd.baml" LogicalName="controls/macrotoadd.baml" />
+    <EmbeddedResource Include="keymap/guidancewindow.baml" LogicalName="keymap/guidancewindow.baml" />
+    <EmbeddedResource Include="controls/singlemacrocontrol.baml" LogicalName="controls/singlemacrocontrol.baml" />
+    <EmbeddedResource Include="controls/screenlockcontrol.baml" LogicalName="controls/screenlockcontrol.baml" />
+    <EmbeddedResource Include="controls/genericnotification/notificationdraweritem.baml" LogicalName="controls/genericnotification/notificationdraweritem.baml" />
+    <EmbeddedResource Include="controls/autocompletecombobox.baml" LogicalName="controls/autocompletecombobox.baml" />
+    <EmbeddedResource Include="controls/recommendedapps.baml" LogicalName="controls/recommendedapps.baml" />
+    <EmbeddedResource Include="keymap/uielement/guidancevideowindow.baml" LogicalName="keymap/uielement/guidancevideowindow.baml" />
+    <EmbeddedResource Include="controls/bluestacksadvancedexit.baml" LogicalName="controls/bluestacksadvancedexit.baml" />
+    <EmbeddedResource Include="controls/ncsettingsdropdown.baml" LogicalName="controls/ncsettingsdropdown.baml" />
+    <EmbeddedResource Include="controls/otsfeedbackcontrol.baml" LogicalName="controls/otsfeedbackcontrol.baml" />
+    <EmbeddedResource Include="cfgreorderwindow.baml" LogicalName="cfgreorderwindow.baml" />
+    <EmbeddedResource Include="controls/blurbmessagecontrol.baml" LogicalName="controls/blurbmessagecontrol.baml" />
+    <EmbeddedResource Include="controls/updateprompt.baml" LogicalName="controls/updateprompt.baml" />
+    <EmbeddedResource Include="controls/minimizebluestacksonclose/view/minimizebluestacksoncloseview.baml" LogicalName="controls/minimizebluestacksonclose/view/minimizebluestacksoncloseview.baml" />
+    <EmbeddedResource Include="controls/imagetranslatecontrol.baml" LogicalName="controls/imagetranslatecontrol.baml" />
+    <EmbeddedResource Include="controls/macrotopbarrecordcontrol.baml" LogicalName="controls/macrotopbarrecordcontrol.baml" />
+    <EmbeddedResource Include="keymap/keymapcanvaswindow.baml" LogicalName="keymap/keymapcanvaswindow.baml" />
+    <EmbeddedResource Include="controls/custompersistenttoastpopupcontrol.baml" LogicalName="controls/custompersistenttoastpopupcontrol.baml" />
+    <EmbeddedResource Include="controls/skinselectorcontrol.baml" LogicalName="controls/skinselectorcontrol.baml" />
+    <EmbeddedResource Include="homeapp.baml" LogicalName="homeapp.baml" />
+    <EmbeddedResource Include="controls/settingswindows/gamesettingview.baml" LogicalName="controls/settingswindows/gamesettingview.baml" />
+    <EmbeddedResource Include="controls/nointernetcontrol.baml" LogicalName="controls/nointernetcontrol.baml" />
+    <EmbeddedResource Include="controls/notificationmodeexitpopup.baml" LogicalName="controls/notificationmodeexitpopup.baml" />
+    <EmbeddedResource Include="controls/settingswindows/preferencessettingscontrol.baml" LogicalName="controls/settingswindows/preferencessettingscontrol.baml" />
+    <EmbeddedResource Include="controls/dmmprogresscontrol.baml" LogicalName="controls/dmmprogresscontrol.baml" />
+    <EmbeddedResource Include="controls/popupbrowsercontrol.baml" LogicalName="controls/popupbrowsercontrol.baml" />
+    <EmbeddedResource Include="containerwindow.baml" LogicalName="containerwindow.baml" />
+    <EmbeddedResource Include="controls/widgeticon.baml" LogicalName="controls/widgeticon.baml" />
+    <EmbeddedResource Include="controls/speedupbluestacksusercontrol.baml" LogicalName="controls/speedupbluestacksusercontrol.baml" />
+    <EmbeddedResource Include="app.baml" LogicalName="app.baml" />
+    <EmbeddedResource Include="controls/quitpopupcontrol.baml" LogicalName="controls/quitpopupcontrol.baml" />
+    <EmbeddedResource Include="appiconui.baml" LogicalName="appiconui.baml" />
+    <EmbeddedResource Include="topbar.baml" LogicalName="topbar.baml" />
+    <EmbeddedResource Include="keymap/uielement/schemecombobox.baml" LogicalName="keymap/uielement/schemecombobox.baml" />
+    <EmbeddedResource Include="controls/dimcontrolwithprogresbar.baml" LogicalName="controls/dimcontrolwithprogresbar.baml" />
+    <EmbeddedResource Include="apptabbuttons.baml" LogicalName="apptabbuttons.baml" />
+    <EmbeddedResource Include="onboardingpopupwindow.baml" LogicalName="onboardingpopupwindow.baml" />
+    <EmbeddedResource Include="controls/preferencedropdowncontrol.baml" LogicalName="controls/preferencedropdowncontrol.baml" />
+    <EmbeddedResource Include="controls/macrotopbarplaycontrol.baml" LogicalName="controls/macrotopbarplaycontrol.baml" />
+    <EmbeddedResource Include="BouncyCastle.Cryptography.dll" LogicalName="BouncyCastle.Cryptography.dll" />
+    <EmbeddedResource Include="DiscordRPC.dll" LogicalName="DiscordRPC.dll" />
+    <EmbeddedResource Include="GalaSoft.MvvmLight.dll" LogicalName="GalaSoft.MvvmLight.dll" />
+    <EmbeddedResource Include="GalaSoft.MvvmLight.Extras.dll" LogicalName="GalaSoft.MvvmLight.Extras.dll" />
+    <EmbeddedResource Include="Guna.UI2.dll" LogicalName="Guna.UI2.dll" />
+    <EmbeddedResource Include="HD-Common.dll" LogicalName="HD-Common.dll" />
+    <EmbeddedResource Include="Microsoft.Practices.ServiceLocation.dll" LogicalName="Microsoft.Practices.ServiceLocation.dll" />
+    <EmbeddedResource Include="Microsoft.WindowsAPICodePack.dll" LogicalName="Microsoft.WindowsAPICodePack.dll" />
+    <EmbeddedResource Include="Microsoft.WindowsAPICodePack.Shell.dll" LogicalName="Microsoft.WindowsAPICodePack.Shell.dll" />
+    <EmbeddedResource Include="Newtonsoft.Json.dll" LogicalName="Newtonsoft.Json.dll" />
+    <EmbeddedResource Include="System.Windows.Interactivity.dll" LogicalName="System.Windows.Interactivity.dll" />
+    <EmbeddedResource Include="Theraot.Core.dll" LogicalName="Theraot.Core.dll" />
+    <EmbeddedResource Include="Vanara.Core.dll" LogicalName="Vanara.Core.dll" />
+    <EmbeddedResource Include="Vanara.PInvoke.DwmApi.dll" LogicalName="Vanara.PInvoke.DwmApi.dll" />
+    <EmbeddedResource Include="Vanara.PInvoke.Gdi32.dll" LogicalName="Vanara.PInvoke.Gdi32.dll" />
+    <EmbeddedResource Include="Vanara.PInvoke.Shared.dll" LogicalName="Vanara.PInvoke.Shared.dll" />
+    <EmbeddedResource Include="Windows7.Multitouch.dll" LogicalName="Windows7.Multitouch.dll" />
+    <EmbeddedResource Include="Windows7.Multitouch.WPF.dll" LogicalName="Windows7.Multitouch.WPF.dll" />
+    <EmbeddedResource Include="Xilium.CefGlue.dll" LogicalName="Xilium.CefGlue.dll" />
+    <EmbeddedResource Include="Xilium.CefGlue.WPF.dll" LogicalName="Xilium.CefGlue.WPF.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="HD-Common" />
+    <Reference Include="System.Core">
+      <HintPath>../../../../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/10.0.9/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase">
+      <HintPath>../../../../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/10.0.9/WindowsBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Xilium.CefGlue.WPF" />
+    <Reference Include="DiscordRPC" />
+    <Reference Include="WindowsBase">
+      <HintPath>../../../../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/10.0.9/WindowsBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Xilium.CefGlue" />
+    <Reference Include="Windows7.Multitouch" />
+    <Reference Include="Guna.UI2" />
+    <Reference Include="System.Net.Http">
+      <HintPath>../../../../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/10.0.9/System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>../../../../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/10.0.9/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml">
+      <HintPath>../../../../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/10.0.9/System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="DiscordRPC" />
+    <Reference Include="System.Xml">
+      <HintPath>../../../../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/10.0.9/System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="Vanara.PInvoke.Shared" />
+    <Reference Include="Vanara.PInvoke.DwmApi" />
+    <Reference Include="GalaSoft.MvvmLight" />
+    <Reference Include="System.Data">
+      <HintPath>../../../../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/10.0.9/System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell" />
+    <Reference Include="System.Web">
+      <HintPath>../../../../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/10.0.9/System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Windows7.Multitouch.WPF" />
+    <Reference Include="BouncyCastle.Cryptography" />
+    <Reference Include="Newtonsoft.Json" />
+  </ItemGroup>
+</Project>

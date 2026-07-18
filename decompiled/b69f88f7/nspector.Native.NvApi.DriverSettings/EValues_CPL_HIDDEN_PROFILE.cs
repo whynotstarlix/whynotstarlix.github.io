@@ -1,0 +1,9 @@
+namespace nspector.Native.NvApi.DriverSettings;
+
+public enum EValues_CPL_HIDDEN_PROFILE : uint
+{
+	CPL_HIDDEN_PROFILE_DISABLED = 0u,
+	CPL_HIDDEN_PROFILE_ENABLED = 1u,
+	CPL_HIDDEN_PROFILE_NUM_VALUES = 2u,
+	CPL_HIDDEN_PROFILE_DEFAULT = 0u
+}

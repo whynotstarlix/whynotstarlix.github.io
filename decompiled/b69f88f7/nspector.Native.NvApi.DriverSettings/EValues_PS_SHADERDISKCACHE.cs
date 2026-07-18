@@ -1,0 +1,9 @@
+namespace nspector.Native.NvApi.DriverSettings;
+
+public enum EValues_PS_SHADERDISKCACHE : uint
+{
+	PS_SHADERDISKCACHE_OFF = 0u,
+	PS_SHADERDISKCACHE_ON = 1u,
+	PS_SHADERDISKCACHE_NUM_VALUES = 2u,
+	PS_SHADERDISKCACHE_DEFAULT = 1u
+}

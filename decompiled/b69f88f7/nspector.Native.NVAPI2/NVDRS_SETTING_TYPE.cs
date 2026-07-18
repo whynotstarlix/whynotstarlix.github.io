@@ -1,0 +1,9 @@
+namespace nspector.Native.NVAPI2;
+
+internal enum NVDRS_SETTING_TYPE
+{
+	NVDRS_DWORD_TYPE,
+	NVDRS_BINARY_TYPE,
+	NVDRS_STRING_TYPE,
+	NVDRS_WSTRING_TYPE
+}

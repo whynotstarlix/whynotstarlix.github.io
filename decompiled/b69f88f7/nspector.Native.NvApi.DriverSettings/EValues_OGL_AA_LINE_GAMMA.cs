@@ -1,0 +1,11 @@
+namespace nspector.Native.NvApi.DriverSettings;
+
+public enum EValues_OGL_AA_LINE_GAMMA : uint
+{
+	OGL_AA_LINE_GAMMA_DISABLED = 16u,
+	OGL_AA_LINE_GAMMA_ENABLED = 35u,
+	OGL_AA_LINE_GAMMA_MIN = 1u,
+	OGL_AA_LINE_GAMMA_MAX = 100u,
+	OGL_AA_LINE_GAMMA_NUM_VALUES = 4u,
+	OGL_AA_LINE_GAMMA_DEFAULT = 16u
+}

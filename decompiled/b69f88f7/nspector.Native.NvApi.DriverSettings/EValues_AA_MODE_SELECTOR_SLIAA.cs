@@ -1,0 +1,9 @@
+namespace nspector.Native.NvApi.DriverSettings;
+
+public enum EValues_AA_MODE_SELECTOR_SLIAA : uint
+{
+	AA_MODE_SELECTOR_SLIAA_DISABLED = 0u,
+	AA_MODE_SELECTOR_SLIAA_ENABLED = 1u,
+	AA_MODE_SELECTOR_SLIAA_NUM_VALUES = 2u,
+	AA_MODE_SELECTOR_SLIAA_DEFAULT = 0u
+}

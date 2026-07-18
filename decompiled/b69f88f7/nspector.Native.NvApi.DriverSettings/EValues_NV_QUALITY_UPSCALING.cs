@@ -1,0 +1,9 @@
+namespace nspector.Native.NvApi.DriverSettings;
+
+public enum EValues_NV_QUALITY_UPSCALING : uint
+{
+	NV_QUALITY_UPSCALING_OFF = 0u,
+	NV_QUALITY_UPSCALING_ON = 1u,
+	NV_QUALITY_UPSCALING_NUM_VALUES = 2u,
+	NV_QUALITY_UPSCALING_DEFAULT = 0u
+}

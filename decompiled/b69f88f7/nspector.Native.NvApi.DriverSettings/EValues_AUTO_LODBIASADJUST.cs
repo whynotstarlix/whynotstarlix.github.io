@@ -1,0 +1,9 @@
+namespace nspector.Native.NvApi.DriverSettings;
+
+public enum EValues_AUTO_LODBIASADJUST : uint
+{
+	AUTO_LODBIASADJUST_OFF = 0u,
+	AUTO_LODBIASADJUST_ON = 1u,
+	AUTO_LODBIASADJUST_NUM_VALUES = 2u,
+	AUTO_LODBIASADJUST_DEFAULT = 1u
+}

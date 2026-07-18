@@ -1,0 +1,9 @@
+namespace nspector.Native.NvApi.DriverSettings;
+
+public enum EValues_OGL_DEEP_COLOR_SCANOUT : uint
+{
+	OGL_DEEP_COLOR_SCANOUT_DISABLE = 0u,
+	OGL_DEEP_COLOR_SCANOUT_ENABLE = 1u,
+	OGL_DEEP_COLOR_SCANOUT_NUM_VALUES = 2u,
+	OGL_DEEP_COLOR_SCANOUT_DEFAULT = 1u
+}

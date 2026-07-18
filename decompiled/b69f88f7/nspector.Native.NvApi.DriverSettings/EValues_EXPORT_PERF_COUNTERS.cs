@@ -1,0 +1,9 @@
+namespace nspector.Native.NvApi.DriverSettings;
+
+public enum EValues_EXPORT_PERF_COUNTERS : uint
+{
+	EXPORT_PERF_COUNTERS_OFF = 0u,
+	EXPORT_PERF_COUNTERS_ON = 1u,
+	EXPORT_PERF_COUNTERS_NUM_VALUES = 2u,
+	EXPORT_PERF_COUNTERS_DEFAULT = 0u
+}

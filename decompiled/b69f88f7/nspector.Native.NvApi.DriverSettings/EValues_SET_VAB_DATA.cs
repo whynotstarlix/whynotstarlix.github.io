@@ -1,0 +1,13 @@
+namespace nspector.Native.NvApi.DriverSettings;
+
+public enum EValues_SET_VAB_DATA : uint
+{
+	SET_VAB_DATA_ZERO = 0u,
+	SET_VAB_DATA_UINT_ONE = 1u,
+	SET_VAB_DATA_FLOAT_ONE = 1065353216u,
+	SET_VAB_DATA_FLOAT_POS_INF = 2139095040u,
+	SET_VAB_DATA_FLOAT_NAN = 2143289344u,
+	SET_VAB_DATA_USE_API_DEFAULTS = uint.MaxValue,
+	SET_VAB_DATA_NUM_VALUES = 6u,
+	SET_VAB_DATA_DEFAULT = uint.MaxValue
+}

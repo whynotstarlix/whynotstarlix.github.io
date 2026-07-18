@@ -1,0 +1,9 @@
+namespace nspector.Native.NvApi.DriverSettings;
+
+public enum EValues_LODBIASADJUST : uint
+{
+	LODBIASADJUST_MIN = 4294967168u,
+	LODBIASADJUST_MAX = 128u,
+	LODBIASADJUST_NUM_VALUES = 2u,
+	LODBIASADJUST_DEFAULT = 0u
+}
