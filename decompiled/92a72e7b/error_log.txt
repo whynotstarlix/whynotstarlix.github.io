@@ -1,0 +1,9 @@
+System.BadImageFormatException: Illegal tables in compressed metadata stream.
+   at System.Reflection.Metadata.MetadataReader.ReadMetadataTableHeader(BlobReader& reader, HeapSizes& heapSizes, Int32[]& metadataTableRowCounts, TableMask& sortedTables)
+   at System.Reflection.Metadata.MetadataReader..ctor(Byte* metadata, Int32 length, MetadataReaderOptions options, MetadataStringDecoder utf8Decoder, Object memoryOwner)
+   at System.Reflection.Metadata.PEReaderExtensions.GetMetadataReader(PEReader peReader, MetadataReaderOptions options, MetadataStringDecoder utf8Decoder)
+   at ICSharpCode.Decompiler.Metadata.MetadataFile..ctor(MetadataFileKind kind, String fileName, PEReader reader, MetadataReaderOptions metadataOptions, MetadataStringDecoder utf8Decoder) in /_/ICSharpCode.Decompiler/Metadata/MetadataFile.cs:line 271
+   at ICSharpCode.Decompiler.Metadata.PEFile..ctor(String fileName, PEReader reader, MetadataReaderOptions metadataOptions, MetadataStringDecoder utf8Decoder) in /_/ICSharpCode.Decompiler/Metadata/PEFile.cs:line 49
+   at ICSharpCode.Decompiler.Metadata.PEFile..ctor(String fileName, PEStreamOptions streamOptions, MetadataReaderOptions metadataOptions, MetadataStringDecoder utf8Decoder) in /_/ICSharpCode.Decompiler/Metadata/PEFile.cs:line 39
+   at ICSharpCode.ILSpyCmd.ILSpyCmdProgram.DecompileAsProject(String assemblyFileName, String projectFileName) in D:\a\ILSpy\ILSpy\ICSharpCode.ILSpyCmd\IlspyCmdProgram.cs:line 559
+   at ICSharpCode.ILSpyCmd.ILSpyCmdProgram.OnExecuteAsync(CommandLineApplication app) in D:\a\ILSpy\ILSpy\ICSharpCode.ILSpyCmd\IlspyCmdProgram.cs:line 220
