@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>LumaVM.CrackMe</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>15.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="a8c3442" />
+    <None Remove="68876cae" />
+    <None Remove="LumaVM.Integrity.49fa60d6fbfc4855929655ca3eff4de8" />
+    <EmbeddedResource Include="a8c3442" LogicalName="a8c3442" />
+    <EmbeddedResource Include="68876cae" LogicalName="68876cae" />
+    <EmbeddedResource Include="LumaVM.Integrity.49fa60d6fbfc4855929655ca3eff4de8" LogicalName="LumaVM.Integrity.49fa60d6fbfc4855929655ca3eff4de8" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="LumaVM.SDK" />
+    <Reference Include="System.Core">
+      <HintPath>../../../../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/10.0.10/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>../../../../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/10.0.10/System.Data.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
