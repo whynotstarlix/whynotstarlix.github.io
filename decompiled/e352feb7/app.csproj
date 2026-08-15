@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>Bluestacks</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>Exe</OutputType>
+    <UseWPF>True</UseWPF>
+    <TargetFramework>net35</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Bluestacks.g.resources" />
+    <EmbeddedResource Include="Bluestacks.g.resources" LogicalName="Bluestacks.g.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="HD-Common" />
+    <Reference Include="System.Core">
+      <HintPath>../../../../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/10.0.10/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json" />
+    <Reference Include="WindowsBase">
+      <HintPath>../../../../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/10.0.10/WindowsBase.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="Xilium.CefGlue.WPF" />
+    <Reference Include="DiscordRPC" />
+    <Reference Include="Xilium.CefGlue" />
+    <Reference Include="Windows7.Multitouch" />
+    <Reference Include="System.Xml">
+      <HintPath>../../../../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/10.0.10/System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="Vanara.PInvoke.Shared" />
+    <Reference Include="Vanara.PInvoke.DwmApi" />
+    <Reference Include="GalaSoft.MvvmLight" />
+    <Reference Include="System.Data">
+      <HintPath>../../../../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/10.0.10/System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic">
+      <HintPath>../../../../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/10.0.10/Microsoft.VisualBasic.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell" />
+    <Reference Include="System.Web">
+      <HintPath>../../../../../../../usr/share/dotnet/shared/Microsoft.NETCore.App/10.0.10/System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Windows7.Multitouch.WPF" />
+    <Reference Include="GalaSoft.MvvmLight.Extras" />
+  </ItemGroup>
+</Project>
